@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stock"
+
+
+    android:alpha="0.9"
+
+
+
+    tools:context=".MainActivity"
+    tools:ignore="NamespaceTypo">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/roboto_black_italic"
+        android:text="Old Details"
+
+        android:textColor="#000000"
+        android:textColorHighlight="#AE0202"
+        android:textColorHint="#C61515"
+        android:textColorLink="#C12121"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/oldShare"
+        app:layout_constraintStart_toStartOf="@+id/oldShare"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/oldShare"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:ems="6"
+        android:gravity="center"
+        android:hint="OLD SHARE"
+        android:inputType="numberSigned"
+        android:minHeight="48dp"
+
+        android:textColor="#F6F6F6"
+        android:textColorHint="#CAC0C0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/price1"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:ems="6"
+        android:gravity="center"
+        android:hint="OLD PRICE"
+        android:inputType="numberSigned"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FDFAFA"
+
+        android:textColorHint="#CAC0C0"
+        android:textColorLink="#FBF8F8"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oldShare"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/roboto_black_italic"
+        android:text="New Details"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/newShare"
+        app:layout_constraintStart_toStartOf="@+id/newShare"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/newShare"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:ems="6"
+        android:gravity="center"
+        android:hint="NEW Share"
+        android:inputType="numberSigned"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#EDEBEB"
+
+        android:textColorHint="#CAC0C0"
+        android:textColorLink="#FFFCFC"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/newPrice"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:ems="6"
+        android:gravity="center"
+        android:hint="NEW PRICE"
+        android:inputType="numberSigned"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CAC0C0"
+        android:textColorLink="#FFFAFA"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newShare" />
+
+    <EditText
+        android:id="@+id/newInvestment"
+
+        android:layout_width="162dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FDFAFA"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newPrice"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/oldInvestment"
+        android:layout_width="162dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FDFAFA"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price1"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/newInvestment"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toEndOf="@+id/oldInvestment"
+        app:layout_constraintTop_toBottomOf="@+id/oldInvestment"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="290dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:textColor="#E11313"
+        android:textColorHint="#E4000000"
+        android:textColorLink="#932020"
+        android:textSize="18sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="290dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textColorHint="#E4000000"
+        android:textColorLink="#FAEEEE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="290dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textColorHint="#E4000000"
+        android:textColorLink="#FFF7F7"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
