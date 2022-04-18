@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Stock Average</string>
+    <string name="old_details">Old Details</string>
+    <string name="old_share">OLD SHARE</string>
+    <string name="old_price">OLD PRICE</string>
+    <string name="new_details">New Details</string>
+    <string name="new_share">NEW Share</string>
+    <string name="new_price">NEW PRICE</string>
+    <string name="calculate">Calculate</string>
 </resources>
